@@ -4,10 +4,10 @@ describe("Login into application", () => {
 
         cy.get('#twotabsearchtextbox').type('gopro').then(() => {
 
+            cy.wait(1000);
+
             cy.get('#nav-search-submit-button').click();    
         })
-
-        cy.wait(1000);
         
     })
 })
